@@ -15,20 +15,18 @@ Thanks to the fantastic people over at jeelabs.org I was able to create this add
 
 ## Current State
 
-UNTESTED!
-
-Revision 1 is done and boards are ordered. I'll update this paragraph as soon as I was able to test the boards on a BP.
+Revision 1 is a little bit off-center but working perfectly fine.
 
 There are some plans for the next revision of the board (see *Issues*). Some of them will probably become a completely different board as this one is meant to be used on a breadboard.
 
 ## Usage
-The *Blue Pill Extender* (BPE) is mounted on top of an existing BP.
+The *Blue Pill Extender* (BPE) is mounted on top of an existing BP (label facing up).
 
 First prepare the BPE by soldering on the small resistors. The reset button is not required but may be helpful. Also add the RF module if you plan to use one. Make sure the RF module is not placed wrongly!
 
-The 90° programming headers should be mounted from below (soldering on top) but they work both ways.
+The 90° programming headers should be mounted from below (soldering on top) but they do work both ways.
 
-Now remove the jumpers from the *BOOT?* pins on the BP and push the BPE on there. Make sure the 2x3 header of the *BOOT?* goes through the BPE and solder the headers. Now use some short wires (or leftover resistor legs) to connect all the outer BPE pins to the corresponding pins on the BP below – **DO NOT** solder the antenna to the BP below!
+Now remove the jumpers from the *BOOT?* pins on the BP and push the BPE on there. Make sure the 2x3 header of the *BOOT?* goes through the BPE and there there is still enough room to plug in an USB cable. Solder the 2x3 headers to the BPE. Now use some short wires (or leftover resistor legs) to connect all the outer BPE pins to the corresponding pins on the BP below – **DO NOT solder the antenna to the BP below!**
 
 ## References
 

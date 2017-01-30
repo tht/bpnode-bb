@@ -1,6 +1,6 @@
 # *Blue Pill* Extender
 
-There is a cheap, wildly available STTM3232F103C8T6 board out there. Because of it's shape and color it's called *Blue Pill* (BP). More details about this board can be found on [jeelabs](http://jeelabs.org/article/1649a/).
+There is a cheap, wildly available STM32F103C8T6 board out there. Because of it's shape and color it's called *Blue Pill* (BP). More details about this board can be found on [jeelabs](http://jeelabs.org/article/1649a/).
 
 The board fits perfectly fine in a breadboard but it's missing the convenient programming headers for [SER+](http://jeelabs.org/article/1649f/) and some other features (see list below).
 

@@ -4,7 +4,8 @@ There is a cheap, wildly available STTM3232F103C8T6 board out there. Because of 
 
 The BP fits perfectly fine in a breadboard but it's missing the convenient programming headers for [SER+](http://jeelabs.org/article/1649f/) and some other features (see list below).
 
-Thanks to the fantastic people over at jeelabs.org I was able to create this add-on board for the *Blue Pill* in KiCAD.
+Thanks to the fantastic people over at jeelabs.org I was able to create this add-on board for the *Blue Pill* in KiCAD. This is how it will look like mounted on a BP.
+![BPE Mounted on a BP](https://cloud.githubusercontent.com/assets/2557225/22713238/e5d889aa-ed87-11e6-9a44-4d8ea02ba8fa.png)
 
 ## Features
 

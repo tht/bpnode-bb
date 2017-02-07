@@ -1,6 +1,6 @@
 # *Blue Pill* Extender
 
-There is a cheap, wildly available STTM3232F103C8T6 board out there. Because of it's shape and color it's called *Blue Pill* (BP). More details about this board can be found on [jeelabs](http://jeelabs.org/article/1649a/). There are *at least* two slightly different boards out there. This extension board is designed to match the BPs where the 2x03 pin header is next to `B11`, `B10` and `B1`. Other boards do have this 2x03 header offset one pin and will not fit nicely as [shown here](https://cloud.githubusercontent.com/assets/148955/22704867/965d2520-ed69-11e6-9ae8-8ece3ff3e735.jpg).
+There is a cheap, wildly available STTM3232F103C8T6 board out there. Because of it's shape and color it's called *Blue Pill* (BP). More details about this board can be found on [jeelabs](http://jeelabs.org/article/1649a/). There are *at least* two slightly different boards out there. This extension board is designed to match the BPs where the 2x03 pin header is next to `B11`, `B10` and `B1`. These are the boards where the USB connector is mounted in a cutout on the PCB. Other boards do have the USB connecter on top of the PCB and this 2x03 header is offset one pin – these boards will not fit nicely and need *creative* soldering as [shown here](https://cloud.githubusercontent.com/assets/148955/22704867/965d2520-ed69-11e6-9ae8-8ece3ff3e735.jpg).
 
 The BP fits perfectly fine in a breadboard but it's missing the convenient programming headers for [SER+](http://jeelabs.org/article/1649f/) and some other features (see list below).
 

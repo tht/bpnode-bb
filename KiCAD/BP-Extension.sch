@@ -31,6 +31,7 @@ LIBS:valves
 LIBS:bluepill
 LIBS:rfm69
 LIBS:switches
+LIBS:mechanical
 LIBS:BP-Extension-cache
 EELAYER 25 0
 EELAYER END
@@ -63,26 +64,15 @@ U 1 1 58713BBC
 P 3100 4750
 F 0 "R1" V 3180 4750 50  0000 C CNN
 F 1 "R" V 3100 4750 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 3030 4750 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3030 4750 50  0001 C CNN
 F 3 "" H 3100 4750 50  0000 C CNN
 	1    3100 4750
 	-1   0    0    1   
 $EndComp
-$Comp
-L R R2
-U 1 1 58713C3E
-P 3200 4750
-F 0 "R2" V 3280 4750 50  0000 C CNN
-F 1 "R" V 3200 4750 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 3130 4750 50  0001 C CNN
-F 3 "" H 3200 4750 50  0000 C CNN
-	1    3200 4750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3100 4350 3100 4600
 Wire Wire Line
-	3200 4600 3200 4350
+	3200 4950 3200 4350
 $Comp
 L GND #PWR01
 U 1 1 58713C7E
@@ -100,8 +90,6 @@ Wire Wire Line
 	3100 4950 3200 4950
 Wire Wire Line
 	3150 4950 3150 5000
-Wire Wire Line
-	3200 4950 3200 4900
 Connection ~ 3150 4950
 $Comp
 L GND #PWR02
@@ -135,7 +123,7 @@ U 1 1 58713DA3
 P 6100 2000
 F 0 "P1" H 6100 2350 50  0000 C CNN
 F 1 "CONN_01X06" V 6200 2000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x06_Pitch2.54mm" H 6100 2000 50  0001 C CNN
+F 2 "BP:Pin_Header_Angled_1x06_Pitch2.54mm" H 6100 2000 50  0001 C CNN
 F 3 "" H 6100 2000 50  0000 C CNN
 	1    6100 2000
 	0    -1   -1   0   
@@ -237,17 +225,6 @@ Text GLabel 8500 4150 2    60   Input ~ 0
 MISO
 Text GLabel 8500 4450 2    60   Input ~ 0
 MOSI
-$Comp
-L CONN_01X01 P2
-U 1 1 58716DE4
-P 9500 4950
-F 0 "P2" H 9500 5050 50  0000 C CNN
-F 1 "CONN_01X01" V 9600 4950 50  0000 C CNN
-F 2 "Connect:PINTST" H 9500 4950 50  0001 C CNN
-F 3 "" H 9500 4950 50  0000 C CNN
-	1    9500 4950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8400 4750 8500 4750
 Wire Wire Line
@@ -278,7 +255,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 4450 8400 4450
 Wire Wire Line
-	8400 4950 9300 4950
+	8400 4950 9500 4950
 Text GLabel 2400 3500 0    60   Input ~ 0
 MOSI
 Text GLabel 2400 3300 0    60   Input ~ 0
@@ -301,7 +278,7 @@ U 1 1 5872565A
 P 8650 1900
 F 0 "SW1" H 8700 2000 50  0000 L CNN
 F 1 "SW_Push" H 8650 1840 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_EVQP2" H 8650 2100 50  0001 C CNN
+F 2 "BP:SMD_BUTTON" H 8650 2100 50  0001 C CNN
 F 3 "" H 8650 2100 50  0000 C CNN
 	1    8650 1900
 	1    0    0    -1  
@@ -359,7 +336,7 @@ U 1 1 58728A59
 P 1400 3350
 F 0 "C1" H 1425 3450 50  0000 L CNN
 F 1 "0.1u" H 1425 3250 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 1438 3200 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1438 3200 50  0001 C CNN
 F 3 "" H 1400 3350 50  0000 C CNN
 	1    1400 3350
 	1    0    0    -1  
@@ -393,4 +370,30 @@ Text Notes 5550 1700 0    79   ~ 0
 Programming Header\nfor Ser+
 Text Notes 3000 1700 0    79   ~ 0
 Blue Pill
+$Comp
+L Antenna_Shield AE1
+U 1 1 589F6A9F
+P 9500 4700
+F 0 "AE1" H 9425 4875 50  0000 R CNN
+F 1 "Antenna_Shield" H 9425 4800 50  0000 R CNN
+F 2 "BP:U.FL-COAX" H 9500 4800 50  0001 C CNN
+F 3 "" H 9500 4800 50  0001 C CNN
+	1    9500 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4950 9500 4900
+$Comp
+L GND #PWR010
+U 1 1 589F6D6F
+P 9600 5050
+F 0 "#PWR010" H 9600 4800 50  0001 C CNN
+F 1 "GND" H 9600 4900 50  0000 C CNN
+F 2 "" H 9600 5050 50  0000 C CNN
+F 3 "" H 9600 5050 50  0000 C CNN
+	1    9600 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5050 9600 4900
 $EndSCHEMATC

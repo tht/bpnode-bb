@@ -1,4 +1,4 @@
-(module BLUEPILL-EXTENSION locked (layer F.Cu) (tedit 589F5000)
+(module BLUEPILL-EXTENSION locked (layer F.Cu) (tedit 58A83EF5)
   (fp_text reference U1 (at 0 25.4) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -33,4 +33,7 @@
   (pad PA2 thru_hole circle (at 7.62 8.89) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
   (pad PB7 smd circle (at -7.62 11.43) (size 2.032 2.032) (layers B.Cu B.Mask))
   (pad PB6 smd circle (at -7.62 8.89) (size 2.032 2.032) (layers B.Cu B.Mask))
+  (pad PB8 thru_hole circle (at -7.62 13.97) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
+  (pad PA1 thru_hole circle (at 7.62 11.43) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
+  (pad PA0 thru_hole circle (at 7.62 13.97) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
 )

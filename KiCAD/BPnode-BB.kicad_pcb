@@ -3,7 +3,7 @@
   (general
     (links 42)
     (no_connects 0)
-    (area 138.608999 79.172999 158.571001 128.599001)
+    (area 137.147 70.567999 158.877001 131.939)
     (thickness 1.6)
     (drawings 63)
     (tracks 245)
@@ -716,7 +716,7 @@
   (gr_text B9 (at 139.446 121.92 270) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
-  (gr_text "Rev 2\n2017/02" (at 148.463 118.872) (layer F.SilkS) (tstamp 58725360)
+  (gr_text "Rev 2\n2017/03" (at 148.463 118.872) (layer F.SilkS) (tstamp 58725360)
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
   )
   (gr_text "BPnode BB" (at 148.336 121.158) (layer F.SilkS)
